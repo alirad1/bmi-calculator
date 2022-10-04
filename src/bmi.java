@@ -3,7 +3,7 @@ import java.util.*;
 public class bmi {
     public static void main(String[] args)
     {
-                System.out.println("Code to check if ur fat - Ali Rad");
+                System.out.println("BMI Calculator - Ali Rad");
                 System.out.println("====================================");
                 Scanner s = new Scanner(System.in);
                 System.out.println("Type '1' for the Metric System");
@@ -38,7 +38,7 @@ public class bmi {
         }
         default:
         {
-            System.out.println("Stupid. I said type 1 or 2 bruh");
+            System.out.println("Please Choose Between The Options Above");
             break;
 
         }
@@ -48,13 +48,13 @@ public class bmi {
         double bmi = weight / (height*height);
         System.out.printf("BMI Value: %.3f\n", bmi);
         if (bmi <= 18.5)
-            System.out.println("eat more");
+            System.out.println("You are underweight!");
         if (bmi <= 24.9 && bmi >= 18.5)
-            System.out.println("Ur average");
+            System.out.println("You are average weight!");
         if (bmi <= 29.9 && bmi >= 25.0)
-            System.out.println("Ur fat");
+            System.out.println("You are overweight!");
         if (bmi >= 30.0)
-            System.out.println("ur an obese monkey");
+            System.out.println("You are obese");
         System.out.println("====================================");
     }
 }
